@@ -4,7 +4,8 @@
   "description": "![Design preview for the Ping coming soon page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "npx tailwindcss -i ./style.css -o ./output.css --watch"
   },
   "author": "",
   "license": "ISC",
