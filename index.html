@@ -23,42 +23,59 @@
 
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
-  <body class="container font-primary">
-    <main class="container flex flex-col mx-auto">
-      <div class="">
+  <body
+    class="container font-primary relative h-screen flex flex-col justify-between"
+  >
+    <main class="container mx-auto flex flex-col justfiy-center items-center">
+      <div class="py-10">
         <img src="/images/logo.svg" alt="" />
       </div>
-      <div>
-        <h1>We are launching <span class="font-bold">soon!</span></h1>
-        <small>Subscribe and get notified</small>
+      <div class="text-center pb-6 laptop:pb-8">
+        <h1 class="pb-3 tablet:pb-6 text-2xl laptop:text-5xl">
+          We are launching <span class="font-bold">soon!</span>
+        </h1>
+        <small class="laptop:text-lg">Subscribe and get notified</small>
       </div>
-      <form class="" action="">
+      <form class="pb-16 tablet:flex gap-3" action="">
         <input
-          class="rounded-full border border-neutral-smurf w-full text-xs px-8 text-neutral-light-blue appearance-none h-[40px]"
+          class="rounded-full tablet:w-[421px] border mb-3 border-neutral-smurf w-full text-xs px-8 text-neutral-light-blue appearance-none h-[40px]"
           type="text"
           required
           placeholder="Your email address"
         />
         <button
-          class="w-full bg-primary-blue text-xs font-semibold text-neutral-white h-[40px] rounded-full"
+          class="w-full tablet:w-[200px] bg-primary-blue text-xs font-semibold text-neutral-white h-[40px] rounded-full"
           type="submit"
         >
           Notify Me
         </button>
       </form>
-    </main>
-    <div>
-      <img src="/images/illustration-dashboard.png" alt="" />
-    </div>
 
-    <footer>
-      <div>
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <div class="max-w-[640px]">
+        <img src="/images/illustration-dashboard.png" alt="" />
       </div>
-      <div>
-        <small class="text-[10px]"
+    </main>
+
+    <footer class="absolute bottom-0 left-[50%] translate-x-[-50%] py-8">
+      <div class="flex gap-4 justify-center pb-4">
+        <a
+          class="border rounded-full h-8 w-8 flex justify-center items-center text-primary-blue"
+          href=""
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="border rounded-full h-8 w-8 flex justify-center items-center text-primary-blue"
+          href=""
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          class="border rounded-full h-8 w-8 flex justify-center items-center text-primary-blue"
+          href=""
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+      <div class="text-center">
+        <small class="text-[10px] text-neutral-grey laptop:text-sm"
           >© Copyright Ping. All rights reserved.</small
         >
       </div>
